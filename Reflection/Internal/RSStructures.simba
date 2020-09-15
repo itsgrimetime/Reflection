@@ -109,6 +109,7 @@ type
 
   RSGameShell = type RSType;
 
+  RSCollisionMap = type RSType;
 
 Procedure RSType.Free;
 begin

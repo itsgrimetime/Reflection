@@ -358,3 +358,8 @@ Function RSClient.IsMenuOpen: Boolean; static;
 begin
   Result := RGetBool(R_EIOS, nil, CLIENT_ISMENUOPEN);
 end;
+
+Function RSClient.CollisionMap : RSCollisionMap; static;
+begin
+  Result.ref := RGetObject(R_EIOS, nil, CLIENT_COLLISIONMAP);
+end;
